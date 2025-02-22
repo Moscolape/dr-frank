@@ -47,7 +47,7 @@ const Home = () => {
         {/* About Section */}
         <div className="mt-20 text-center">
           <p className="text-4xl md:text-6xl font-bold font-Poppins" data-aos="flip-down">
-            Who Am I and What I Do?
+            Who Am I and What Do I Do?
           </p>
 
           <div className="mt-10 flex flex-wrap justify-center items-center gap-10">

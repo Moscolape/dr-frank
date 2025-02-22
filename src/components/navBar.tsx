@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react"; // Importing icons
 
 const links = [
   { name: "About", href: "/about" },
-  { name: "Achievements", href: "/achievements" },
+  { name: "Milestones", href: "/milestones" },
   { name: "Contact", href: "/contact" },
   { name: "Engagements", href: "/engagements" },
   { name: "Media", href: "/media" },
