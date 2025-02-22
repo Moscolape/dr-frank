@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { Menu, X } from "lucide-react"; // Importing icons
 
 const links = [
   { name: "About", href: "/about" },
@@ -29,6 +30,7 @@ export default function NavLinks() {
   const menuButtonRef = useRef<HTMLButtonElement | null>(null);
   const menuRef = useRef<HTMLDivElement | null>(null);
 
+
   useEffect(() => {
     const handleOutsideClick = (event: MouseEvent) => {
       if (
@@ -37,12 +39,14 @@ export default function NavLinks() {
         menuRef.current &&
         !menuRef.current.contains(event.target as Node)
       ) {
-        setMenuOpen(false);
+        setTimeout(() => setMenuOpen(false), 100); // ✅ Add delay to prevent immediate closing
       }
     };
 
     if (isMenuOpen) {
-      document.body.addEventListener("click", handleOutsideClick);
+      setTimeout(() => {
+        document.body.addEventListener("click", handleOutsideClick);
+      }, 50); // ✅ Delay attaching the event
     } else {
       document.body.removeEventListener("click", handleOutsideClick);
     }
@@ -61,7 +65,7 @@ export default function NavLinks() {
           <Link
             key={link.name}
             to={link.href}
-            className={`px-4 py-2 text-h6 text-h font-medium rounded-md ${
+            className={`px-4 py-2 text-h6 font-medium rounded-md ${
               currentPath === link.href ? "text-white bg-black" : ""
             }`}
           >
@@ -71,13 +75,13 @@ export default function NavLinks() {
       </div>
       {/* Mobile Menu */}
       <div className="md:hidden relative">
-        <motion.button onClick={toggleMenu} ref={menuButtonRef}>
-          <img src="/menu-01.svg" alt="open" width={40} height={40} />
+        <motion.button onClick={toggleMenu} ref={menuButtonRef} className="p-2 rounded-md focus:outline-none">
+          {isMenuOpen ? <X size={32} /> : <Menu size={32} />}
         </motion.button>
         {isMenuOpen && (
           <div
             ref={menuRef}
-            className="absolute z-40 top-16 right-0 bg-white shadow-lg rounded-lg py-1 px-3 w-48"
+            className="absolute z-40 top-16 right-0 bg-white shadow-lg rounded-lg py-2 px-3 w-48"
           >
             {links.map((link) => (
               <Link

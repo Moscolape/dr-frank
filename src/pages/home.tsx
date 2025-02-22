@@ -23,7 +23,7 @@ const Home = () => {
             <p className="text-lg md:text-xl my-5" data-aos="fade-right">
               My names are <b>DR. FRANK ODINAKA IGBOJINDU (Bsc., Msc., Ph.D in Acc.)</b>
             </p>
-            <Link to="/about">
+            <Link to="/contact">
               <button
                 className="bg-yellow-800 transition duration-500 hover:bg-yellow-900 text-white px-6 py-3 rounded-md"
                 data-aos="fade-up"
