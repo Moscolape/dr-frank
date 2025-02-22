@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    transition: 0.2s ease-in-out all;
+  }
+  
+  /* DM Sans */
+  .font-DM-Sans {
+    font-family: 'DM Sans', sans-serif;
+  }
+  
+  /* Inter */
+  .font-Inter {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Poppins */
+  .font-Poppins {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .font-Montserrat {
+    font-family: 'Montserrat', sans-serif;
+  }

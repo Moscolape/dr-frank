@@ -53,16 +53,16 @@ export default function NavLinks() {
   return (
     <nav className="flex justify-between items-center px-4 py-3">
       <Link to="/" className="logo">
-        <img src="/dr-frank.svg" alt="My Logo" width={120} height={50} />
+        <img src="/dr-frank.svg" alt="My Logo" width={150} height={70} />
       </Link>
       {/* Desktop Navigation */}
-      <div className="hidden md:flex items-center space-x-4">
+      <div className="hidden md:flex items-center space-x-4 font-Poppins">
         {links.map((link) => (
           <Link
             key={link.name}
             to={link.href}
-            className={`px-4 py-2 text-sm font-medium rounded-md ${
-              currentPath === link.href ? "text-white bg-blue-700" : ""
+            className={`px-4 py-2 text-h6 text-h font-medium rounded-md ${
+              currentPath === link.href ? "text-white bg-black" : ""
             }`}
           >
             {link.name}
@@ -77,13 +77,13 @@ export default function NavLinks() {
         {isMenuOpen && (
           <div
             ref={menuRef}
-            className="absolute top-16 right-0 bg-white shadow-lg rounded-lg py-2 px-4 w-48"
+            className="absolute z-40 top-16 right-0 bg-white shadow-lg rounded-lg py-1 px-3 w-48"
           >
             {links.map((link) => (
               <Link
                 key={link.name}
                 to={link.href}
-                className="block py-2 text-black hover:bg-blue-500 hover:text-white rounded-md"
+                className="block p-2 text-black hover:bg-black hover:text-white rounded-md"
               >
                 {link.name}
               </Link>

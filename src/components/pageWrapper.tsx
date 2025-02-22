@@ -9,7 +9,7 @@ const PageWrapper: React.FC<PageWrapperProps> = ({ children }) => {
   return (
     <div className="w-full h-full">
       <NavLinks />
-      <div className="w-[85%] m-auto mt-10">
+      <div className="w-[90%] m-auto mt-10">
         {children}
       </div>
     </div>
