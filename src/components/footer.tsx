@@ -19,12 +19,12 @@ const socialMediaLinks = [
 
 export default function Footer() {
   return (
-    <div className="w-full bg-[#071125] text-white text-body1">
-      <div className="flex justify-between items-center py-4 sm:px-5 mo:px-2">
+    <div className="w-full bg-[#071125] text-white text-body1 mt-20">
+      <div className="flex justify-between items-center py-4 sm:px-5 mo:px-5 mx-5">
         {/* Social Media Icons */}
-        <div className="text-h6 w-[10%] flex justify-between">
+        <div className="text-h6 sm:w-[10%] mo:w-1/5 flex justify-between">
           {socialMediaLinks.map((link, index) => (
-            <Link to={link.href} key={index} target="_blank" rel="noopener noreferrer">
+            <Link to={link.href} key={index} target="_blank" rel="noopener noreferrer" className="mr-2 text-2xl">
               {link.icon}
             </Link>
           ))}
@@ -36,9 +36,6 @@ export default function Footer() {
       <div className="w-full m-auto py-6 text-center border-t-2 border-white">
         <p className="sm:px-0 mo:px-7 sm:text-body2 mo:text-sub">
           Developed by Chukwunenye Moses &copy; 2025 | All rights reserved.
-        </p>
-        <p className="sm:px-0 mo:px-7 sm:text-body2 mo:text-sub">
-          Contact @ 08115456386
         </p>
       </div>
     </div>

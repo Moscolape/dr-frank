@@ -43,8 +43,8 @@ export default {
             11: '#F0EE8C'
           }
         },
-        screen: {
-          'mo': '20rem'
+        screens: {
+          'mo': '320px'
         },
         fontSize: {
           h1: '4.500rem', // 72px

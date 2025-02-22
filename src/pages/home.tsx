@@ -3,7 +3,6 @@ import PageWrapper from "../components/pageWrapper";
 import myImage from "../assets/_DEN6684-Photoroom.png";
 import myImage2 from "../assets/_DEN6699-Photoroom.png";
 import MarqueeSlider from "../components/marqueeSlider";
-import Footer from "../components/footer";
 
 const Home = () => {
   return (
@@ -13,15 +12,23 @@ const Home = () => {
         <div className="w-full flex flex-wrap justify-between items-center px-6 py-10 font-Montserrat">
           {/* Left Content */}
           <div className="w-full md:w-1/2 text-center md:text-left">
-            <p className="text-4xl md:text-6xl text-yellow-800 font-bold" data-aos="fade-up">
+            <p
+              className="text-4xl md:text-6xl text-yellow-800 font-bold"
+              data-aos="fade-up"
+            >
               Celebrity Event Planner
             </p>
-            <p className="text-lg md:text-xl my-5 md:my-10 md:w-[90%]" data-aos="fade-right">
+            <p
+              className="text-lg md:text-xl my-5 md:my-10 md:w-[90%]"
+              data-aos="fade-right"
+            >
               If you're looking for a trustworthy businessman who understands
-              the importance of an event well planned and executed, then search no more.
+              the importance of an event well planned and executed, then search
+              no more.
             </p>
             <p className="text-lg md:text-xl my-5" data-aos="fade-right">
-              My names are <b>DR. FRANK ODINAKA IGBOJINDU (Bsc., Msc., Ph.D in Acc.)</b>
+              My names are{" "}
+              <b>DR. FRANK ODINAKA IGBOJINDU (Bsc., Msc., Ph.D in Acc.)</b>
             </p>
             <Link to="/contact">
               <button
@@ -46,7 +53,10 @@ const Home = () => {
 
         {/* About Section */}
         <div className="mt-20 text-center">
-          <p className="text-4xl md:text-6xl font-bold font-Poppins" data-aos="flip-down">
+          <p
+            className="text-4xl md:text-6xl font-bold font-Poppins"
+            data-aos="flip-down"
+          >
             Who Am I and What Do I Do?
           </p>
 
@@ -61,25 +71,29 @@ const Home = () => {
 
             {/* Right Content */}
             <div className="w-full md:w-3/5 text-center md:text-left">
-              <p className="text-lg md:text-xl my-5 md:my-10" data-aos="fade-up">
-                I am the <span className="text-orange-600 font-bold">CEO</span> of{" "}
-                <span className="text-blue-900 font-bold">AKPOAZAA GROUP</span>, 
+              <p
+                className="text-lg md:text-xl my-5 md:my-10"
+                data-aos="fade-up"
+              >
+                I am the <span className="text-orange-600 font-bold">CEO</span>{" "}
+                of{" "}
+                <span className="text-blue-900 font-bold">AKPOAZAA GROUP</span>,
                 a conglomerate company with subsidiaries in various industries.
               </p>
-              <p className="text-lg md:text-xl my-5 md:my-10" data-aos="fade-down">
+              <p
+                className="text-lg md:text-xl my-5 md:my-10"
+                data-aos="fade-down"
+              >
                 Over the past 10 years, my team and I have built a business that
-                prioritizes human capital development and aims to leave a lasting legacy.
+                prioritizes human capital development and aims to leave a
+                lasting legacy.
               </p>
             </div>
           </div>
         </div>
+        {/* Marquee Slider */}
+        <MarqueeSlider />
       </PageWrapper>
-
-      {/* Marquee Slider */}
-      <MarqueeSlider />
-
-      {/* Footer */}
-      <Footer />
     </>
   );
 };
