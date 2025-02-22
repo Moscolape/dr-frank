@@ -60,7 +60,7 @@ const Home = () => {
             />
 
             {/* Right Content */}
-            <div className="w-full md:w-2/5 text-center md:text-left">
+            <div className="w-full md:w-3/5 text-center md:text-left">
               <p className="text-lg md:text-xl my-5 md:my-10" data-aos="fade-up">
                 I am the <span className="text-orange-600 font-bold">CEO</span> of{" "}
                 <span className="text-blue-900 font-bold">AKPOAZAA GROUP</span>, 
