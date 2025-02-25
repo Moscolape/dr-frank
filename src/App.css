@@ -305,3 +305,31 @@
     animation: fadeDownFast 0.5s;
   }
   
+  /* For Firefox */
+.custom-scrollbar-example::-moz-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+/* General styling */
+.custom-scrollbar-example::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+/* width */
+.event-overview::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.event-overview::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #E8E8E8; 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+.event-overview::-webkit-scrollbar-thumb {
+  background:#7A7A7A; 
+  border-radius: 5px;
+}

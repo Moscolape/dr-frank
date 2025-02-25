@@ -22,7 +22,7 @@ const Home = () => {
               className="text-4xl md:text-6xl text-yellow-800 font-bold font-Poppins"
               data-aos="fade-up"
             >
-              Celebrity Event Planner
+              Celebrity Event Planner with PhD
             </p>
             <p
               className="text-lg md:text-xl my-5 md:my-10 md:w-[90%]"
@@ -34,7 +34,7 @@ const Home = () => {
             </p>
             <p className="text-lg md:text-xl my-5" data-aos="fade-right">
               My names are{" "}
-              <b>DR. FRANK ODINAKA IGBOJINDU (Bsc., Msc., Ph.D in Acc.)</b>
+              <b>DR. FRANK ODINAKA IGBOJINDU (DIP Acc., BSc Acc., MSc Acc., PhD Acc., ACA)</b>
             </p>
             <Link to="/contact">
               <button
@@ -47,10 +47,10 @@ const Home = () => {
           </div>
 
           {/* Right Image */}
-          <div className="w-full md:w-1/2 flex justify-center md:justify-end mt-6 md:mt-0">
+          <div className="w-full md:w-1/2 flex justify-center md:justify-end mt-10">
             <img
               src={myImage}
-              className="w-full max-w-xs md:max-w-sm object-cover"
+              className="object-cover scale-125"
               alt="accountant"
               data-aos="fade-down"
             />

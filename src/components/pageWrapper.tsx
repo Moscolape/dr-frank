@@ -8,7 +8,7 @@ type PageWrapperProps = {
 
 const PageWrapper: React.FC<PageWrapperProps> = ({ children }) => {
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full custom-scrollbar-example">
       <NavLinks />
       <div className="w-[90%] m-auto mt-10">{children}</div>
       <Footer />
