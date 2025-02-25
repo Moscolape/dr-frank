@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import PageWrapper from "../components/pageWrapper";
-import myImage from "../assets/_DEN6684-Photoroom.png";
+import myImage from "../assets/_DEN6718-removebg-preview.png";
 import myImage2 from "../assets/_DEN6699-Photoroom.png";
 import MarqueeSlider from "../components/marqueeSlider";
 import { useEffect } from "react";
