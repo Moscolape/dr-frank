@@ -55,7 +55,7 @@ export default function NavLinks() {
   }, [isMenuOpen]);
 
   return (
-    <nav className="flex justify-between items-center px-4 py-3">
+    <nav className="flex justify-between items-center sm:px-4 sm:py-3">
       <Link to="/" className="logo">
         <img src="/dr-frank.svg" alt="My Logo" width={150} height={70} />
       </Link>
@@ -81,7 +81,7 @@ export default function NavLinks() {
         {isMenuOpen && (
           <div
             ref={menuRef}
-            className="absolute z-40 top-16 right-0 bg-white shadow-lg rounded-lg py-2 px-3 w-48"
+            className="absolute z-40 top-16 right-4 bg-white shadow-lg rounded-lg py-2 px-3 w-48 animate-fadeDownFast"
           >
             {links.map((link) => (
               <Link

@@ -19,7 +19,7 @@ const Home = () => {
           {/* Left Content */}
           <div className="w-full sm:w-1/2">
             <p
-              className="text-4xl md:text-6xl text-yellow-800 font-bold"
+              className="text-4xl md:text-6xl text-yellow-800 font-bold font-Poppins"
               data-aos="fade-up"
             >
               Celebrity Event Planner
