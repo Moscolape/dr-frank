@@ -3,15 +3,21 @@ import PageWrapper from "../components/pageWrapper";
 import myImage from "../assets/_DEN6684-Photoroom.png";
 import myImage2 from "../assets/_DEN6699-Photoroom.png";
 import MarqueeSlider from "../components/marqueeSlider";
+import { useEffect } from "react";
+import initializeAOS from "../utils/aos-init";
 
 const Home = () => {
+  useEffect(() => {
+    initializeAOS();
+  }, []);
+
   return (
     <>
       <PageWrapper>
         {/* Hero Section */}
-        <div className="w-full flex flex-wrap justify-between items-center px-6 py-10 font-Montserrat">
+        <div className="w-full flex flex-wrap justify-between items-center sm:px-6 py-10 font-Montserrat">
           {/* Left Content */}
-          <div className="w-full md:w-1/2 text-center md:text-left">
+          <div className="w-full sm:w-1/2">
             <p
               className="text-4xl md:text-6xl text-yellow-800 font-bold"
               data-aos="fade-up"
@@ -70,7 +76,7 @@ const Home = () => {
             />
 
             {/* Right Content */}
-            <div className="w-full md:w-3/5 text-center md:text-left">
+            <div className="w-full md:w-3/5 text-left">
               <p
                 className="text-lg md:text-xl my-5 md:my-10"
                 data-aos="fade-up"

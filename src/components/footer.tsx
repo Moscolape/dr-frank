@@ -35,7 +35,7 @@ export default function Footer() {
       {/* Footer Text */}
       <div className="w-full m-auto py-6 text-center border-t-2 border-white">
         <p className="sm:px-0 mo:px-7 sm:text-body2 mo:text-sub">
-          Developed by Chukwunenye Moses &copy; 2025 | All rights reserved.
+          Akpoazaa Group &copy; 2025 | All rights reserved.
         </p>
       </div>
     </div>

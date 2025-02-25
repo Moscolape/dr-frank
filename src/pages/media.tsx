@@ -26,13 +26,13 @@ const Media = () => {
 
   return (
     <PageWrapper>
-      <div className="mb-10 text-center w-full max-w-[95%]" data-aos="fade-up">
-        <p className="text-[#0F1B33] font-bold text-2xl sm:text-4xl">
-          Welcome to my media coverage page
+      <div className="mb-10 w-full max-w-[95%]" data-aos="fade-up">
+        <p className="text-[#0F1B33] font-bold text-2xl sm:text-4xl text-center">
+          Welcome to my media page
         </p>
         <div className="bg-blue-custom w-28 h-1 mx-auto my-2"></div>
         <p
-          className="text-gray-700 text-sm sm:text-base sm:w-4/5 m-auto"
+          className="text-gray-700 text-sm sm:text-base sm:w-4/5 m-auto sm:text-center"
           data-aos="zoom-in-down"
         >
           Over the years, I've engaged myself in several conferences, hosted

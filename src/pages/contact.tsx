@@ -1,13 +1,12 @@
 import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import initializeAOS from "../utils/aos-init";
 import PageWrapper from "../components/pageWrapper";
 import { FaPhoneAlt, FaWhatsapp, FaMapMarkerAlt } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 
 export default function Contact() {
   useEffect(() => {
-    AOS.init();
+    initializeAOS();
   }, []);
 
   return (
@@ -15,15 +14,15 @@ export default function Contact() {
       <section className="w-full flex flex-col items-center">
         {/* Header */}
         <div
-          className="mb-10 text-center w-full max-w-[95%]"
+          className="mb-10 w-full max-w-[95%]"
           data-aos="fade-up"
         >
-          <p className="text-[#0F1B33] font-bold text-2xl sm:text-4xl">
+          <p className="text-[#0F1B33] font-bold text-2xl sm:text-4xl text-center">
             Reach Out
           </p>
           <div className="bg-blue-custom w-28 h-1 mx-auto my-2"></div>
           <p
-            className="text-gray-700 text-sm sm:text-base"
+            className="text-gray-700 text-sm sm:text-base sm:text-center"
             data-aos="zoom-in-down"
           >
             If you're looking for a way to contact me for any discussion of
