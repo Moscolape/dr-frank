@@ -5,10 +5,10 @@ import { Menu, X } from "lucide-react"; // Importing icons
 
 const links = [
   { name: "About", href: "/about" },
-  { name: "Milestones", href: "/milestones" },
-  { name: "Contact", href: "/contact" },
-  { name: "Engagements", href: "/engagements" },
+  // { name: "Milestones", href: "/milestones" },
   { name: "Media", href: "/media" },
+  { name: "Contact", href: "/contact" },
+  // { name: "Engagements", href: "/engagements" },
 ];
 
 export default function NavLinks() {
@@ -55,7 +55,7 @@ export default function NavLinks() {
   }, [isMenuOpen]);
 
   return (
-    <nav className="flex justify-between items-center sm:px-4 sm:py-3">
+    <nav className="flex justify-between items-center sm:px-4 sm:py-3 fixed w-full top-0 z-50 bg-white">
       <Link to="/" className="logo">
         <img src="/dr-frank.svg" alt="My Logo" width={150} height={70} />
       </Link>
