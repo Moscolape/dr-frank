@@ -81,7 +81,7 @@ const Home = () => {
                 className="text-lg md:text-xl my-5 md:my-10"
                 data-aos="fade-up"
               >
-                I am the <span className="text-orange-600 font-bold">CEO</span>{" "}
+                I am the <span className="text-orange-600 font-bold">GMD</span>{" "}
                 of{" "}
                 <span className="text-blue-900 font-bold">AKPOAZAA GROUP</span>,
                 a conglomerate company with subsidiaries in various industries.
