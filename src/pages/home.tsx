@@ -92,7 +92,7 @@ const Home = () => {
               >
                 Over the past 10 years, my team and I have built a business that
                 prioritizes human capital development and aims to leave a
-                lasting legacy.
+                lasting legacy through our subsidiaries shown below;
               </p>
             </div>
           </div>

@@ -57,17 +57,20 @@ export default function Contact() {
 
           {/* Location Contact */}
           <div
-            className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center"
+            className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center sm:text-center"
             data-aos="fade-right"
             data-aos-delay="700"
           >
             <FaMapMarkerAlt className="text-red-500 text-5xl sm:text-6xl mb-2" />
             <p className="text-lg font-bold text-[#0F1B33] my-2">
               Anambra State, Nigeria
-            </p>
+            </p><br />
             <p className="text-gray-700">
               Suite B6 Millenium Plaza By Total Filling Station, Near Aroma
               Junction, Awka.
+            </p><br />
+            <p className="text-gray-700">
+              Akpoazaa Complex, Okija Junction, Anambra State.
             </p>
           </div>
 
