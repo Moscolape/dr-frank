@@ -51,7 +51,7 @@ export default function Contact() {
               <b>WhatsApp</b> - DM Anytime
             </p>
             <p className="text-gray-700">
-              <b>Phone Call</b> - Mon-Sun (4AM - 10PM)
+              <b>Phone Call</b> - Mon-Sun (1AM - 7PM)
             </p>
           </div>
 
