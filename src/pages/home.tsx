@@ -33,7 +33,7 @@ const Home = () => {
               no more.
             </p>
             <p className="text-lg md:text-xl my-5" data-aos="fade-right">
-              My names are{" "}
+              My name is{" "}
               <b>DR. FRANK ODINAKA IGBOJINDU (DIP Acc., BSc Acc., MSc Acc., PhD Acc., ACA)</b>
             </p>
             <Link to="/contact">
